@@ -32,8 +32,32 @@
     <v-content>
       <router-view/>
     </v-content>
-    <v-footer app>
+    <v-layout row justify-center>
+    <v-dialog v-model="socials" max-width="500">
+      <v-card>
+        <v-toolbar color="secondary" dense flat depressed>
+          <v-toolbar-title>
+            <div>
+              <h3 class="headline">Voeg mij toe!</h3>
+            </div>
+          </v-toolbar-title>
+        </v-toolbar>
+        <v-list two-line>
+          <template v-for="(medium, index) in media">
+            <v-list-tile :key="index" :href="medium.url" target="_blank">
+                <v-list-tile-title>{{ medium.name }}</v-list-tile-title>
+                <v-icon>{{ medium.icon }}</v-icon>
+            </v-list-tile>
+            <v-divider :key='index'></v-divider>
+          </template>
+        </v-list>
+      </v-card>
+    </v-dialog>
+  </v-layout>
+    <v-footer app absolute>
       <span style="padding-left: 2%;">Jesse Boogaard &copy; {{ new Date().getFullYear() }}</span>
+      <v-spacer></v-spacer>
+      <v-icon @click.native="socials = true;" style="padding-right: 2%;">person_add</v-icon>
     </v-footer>
   </v-app>
 </template>
@@ -42,12 +66,18 @@
 export default {
   data () {
     return {
+      socials: false,
       subjects: [
         { title: 'Media', url: '/#/media' },
         { title: 'Software', url: '/#/software' },
         { title: 'Technology', url: '/#/technology' },
         { title: 'Business', url: '/#/business' },
         { title: 'Portfolio', url: '/#/portfolio' }
+      ],
+      media: [
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jesseboogaard/', icon: 'people' },
+        { name: 'GitHub', url: 'https://www.github.com/JesseBoogaard', icon: 'code' },
+        { name: '+31 6 28020731', url: '', icon: 'phone' }
       ]
     }
   },

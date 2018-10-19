@@ -1,11 +1,11 @@
 <template>
   <v-container grid-list-md>
-    <v-flex xs12 sm10 md10 lg10 offset-sm1 offset-md1 offset-lg1>
+    <v-flex xs12 sm12 md12 lg12>
     <v-card>
         <a :href='url.photography.album' target='_blank'>
           <v-img
             :src='url.me'
-            aspect-ratio='2.3'
+            aspect-ratio='2'
           >
           </v-img>
         </a>
@@ -28,11 +28,11 @@
     </v-flex>
     <v-layout wrap>
       <v-flex xs12 md6 xl4 v-for='(project, index) in projects' :key='index'>
-        <v-card>
+        <v-card hover raised>
           <v-img :src='project.image' height='250px'></v-img>
           <v-card-title class='text-xs-left'>
-            <h3 class='headline mb-0'>{{ project.name }}</h3><br/><br/>
-              <div><b>{{ project.description }}</b></div><br/><br/><br/>
+            <h3 class='headline mb-0'>{{ project.name }}</h3>
+              <div><b>{{ project.description }}</b></div>
               <div class='grey--text'>Languages used: <b>{{ project.stack }}</b><br/>Role: <b>{{ project.role }}</b></div>
           </v-card-title>
           <v-card-actions>
@@ -134,7 +134,7 @@
           {
             name: 'ASA (P1 event)',
             stack: 'C#, RobotC, Javascript',
-            description: 'First team assignment at Fontys University. Conceptualization and creation of an early prototype for a product that solves a hindrance people face.',
+            description: 'First team assignment at Fontys University. Creation of an early prototype for a product that solves a problem people face in their day-to-day life.',
             role: 'Project Manager, Backend developer, Frontend developer',
             link: 'http://asa.jesseboogaard.com/index.html',
             image: '/static/img/projects/ASA.png'
