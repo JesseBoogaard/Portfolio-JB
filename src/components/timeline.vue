@@ -1,24 +1,26 @@
 <template>
-  <v-card>
-    <v-card-title>
-      <div class="headline">
-        <h2>Tijdlijn P1</h2>
-      </div>
-    </v-card-title>
-    <v-timeline>
-      <v-timeline-item v-for='(week, index) in weeks' :key='index' color='primary' large>
-        <span slot='opposite'>week {{ week.weekno }}</span>
-        <v-card class='elevation-2' light>
-          <v-card-title class='headline'>
-            {{ week.title }}
-          </v-card-title>
-          <v-card-text>
-            {{  week.details }}
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-    </v-timeline>
-  </v-card>
+  <v-container grid-list-md>
+    <v-card style="padding: 2%;">
+      <v-card-title>
+        <div class="headline">
+          <h2>Tijdlijn Periode 1</h2>
+        </div>
+      </v-card-title>
+      <v-timeline>
+        <v-timeline-item v-for='(week, index) in weeks' :key='index' color='primary' large>
+          <span slot='opposite'>week {{ week.weekno }}</span>
+          <v-card class='elevation-2' light id='weeks'>
+            <v-card-title class='headline'>
+              {{ week.title }}
+            </v-card-title>
+            <v-card-text>
+              {{  week.details }}
+            </v-card-text>
+          </v-card>
+        </v-timeline-item>
+      </v-timeline>
+    </v-card>
+  </v-container>
 </template>
 <script>
   export default {
@@ -38,3 +40,6 @@
     }
   }
 </script>
+<style>
+
+</style>

@@ -10,15 +10,21 @@
         </v-layout>
       </v-container>
     </v-parallax> -->
-    <v-toolbar app>
-      <v-btn icon href="/">
-        <v-icon>code</v-icon>
+    <v-toolbar flat app dense>
+      <v-btn depressed icon ripple href="/#/">
+        <v-img src="static/img/favicon.png" aspect-ratio="1"></v-img>
       </v-btn>
-      <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn flat href='/#/timeline'>
-        timeline
-      </v-btn>
+      <v-menu offset-y>
+        <v-btn flat slot="activator">
+          vakken
+        </v-btn>
+        <v-list>
+          <v-list-tile v-for="(subject, index) in subjects" :key="index" :href="subject.url">
+            <v-list-tile-title>{{ subject.title }}</v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
       <v-btn flat href='/#/downloads'>
         downloads
       </v-btn>
@@ -36,7 +42,13 @@
 export default {
   data () {
     return {
-      title: 'Jesse Boogaard'
+      subjects: [
+        { title: 'Media', url: '/#/media' },
+        { title: 'Software', url: '/#/software' },
+        { title: 'Technology', url: '/#/technology' },
+        { title: 'Business', url: '/#/business' },
+        { title: 'Portfolio', url: '/#/portfolio' }
+      ]
     }
   },
   name: 'App'

@@ -1,7 +1,14 @@
 <template>
   <v-container grid-list-md>
-    <v-flex xs12 sm10 offset-sm1>
+    <v-flex xs12 sm10 md10 lg10 offset-sm1 offset-md1 offset-lg1>
     <v-card>
+        <a :href='url.photography.album' target='_blank'>
+          <v-img
+            :src='url.me'
+            aspect-ratio='2.3'
+          >
+          </v-img>
+        </a>
       <v-card-title primary-title>
         <div>
           <h3 class='headline mb-0'>Wie ben ik?</h3>
@@ -12,13 +19,6 @@
         Ik ben van kleins af aan al zeer geïnteresseerd in technologie, maar <a :href='url.github' target='_blank'>programmeren</a> (voornamelijk web development) is voor mij een recentere hobby (~3 jaar), ook ben ik erg geïnteresseerd in <a :href='url.photography.main' target='_blank'>fotografie</a>, <a :href='url.music' target='_blank'>muziek</a>, natuur, schietsport, literatuur, <a :href='url.map' target='_blank'>reizen</a>, scheikunde, geschiedenis. Kortom, ik heb een érg brede interesse.<br><br>
         Ik ben een leergierig en assertief persoon, daarnaast ben ik een rustige werker die graag de leiding neemt, dit gaat mij dan ook goed af en heb veel plezier in het leiden van een team.
       </v-card-text>
-        <a :href='url.photography.album' target='_blank'>
-          <v-img
-            :src='url.me'
-            aspect-ratio='2.3'
-          >
-          </v-img>
-        </a>
     </v-card>
     </v-flex>
     <v-spacer></v-spacer>
@@ -111,13 +111,14 @@
           music: 'https://www.last.fm/user/PsychoDuck45',
           map: 'https://www.amcharts.com/visited_countries/#BE,DK,FR,DE,GR,IE,LU,NL,NO,PT,CH,GB,CA,US,GH,NG,TN',
           github: 'https://www.github.com/JesseBoogaard',
-          me: '/static/img/me.jpg'
+          me: '/static/img/me.jpg',
+          thumb: '/static/img/favicon.png'
         },
         projects: [
           {
             name: 'SlimeBot',
             stack: 'Node.js & NoSQL (Google Firestore)',
-            description: 'A text-based adaption of the indie-game SlimeRancher. (disguised as a Discord bot) ',
+            description: 'A text-based adaption of the indie-game SlimeRancher. (disguised as a Discord bot) Will double as slimerancher wiki in the future.',
             role: 'Backend developer',
             link: 'https://github.com/JesseBoogaard/SlimeBot',
             image: '/static/img/projects/slimebot.png'
