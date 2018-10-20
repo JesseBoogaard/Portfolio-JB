@@ -10,7 +10,7 @@ import colors from 'vuetify/es5/util/colors'
 Vue.use(Vuetify, {
   theme: {
     primary: colors.teal.lighten2,
-    secondary: colors.teal.base,
+    secondary: colors.teal.darken1,
     accent: colors.grey.darken2
   }
 })

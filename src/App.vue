@@ -11,7 +11,7 @@
       </v-container>
     </v-parallax> -->
       <v-fab-transition>
-        <v-btn @click.native="socials = true;" style="margin-bottom: 42px;" color="secondary" fixed dark absolute bottom right fab>
+        <v-btn @click.native="socials = true;" style="margin-bottom: 42px;" color="primary" fixed dark absolute bottom right fab>
           <v-icon>add</v-icon>
         </v-btn>
       </v-fab-transition>

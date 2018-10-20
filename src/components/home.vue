@@ -36,7 +36,7 @@
               <div class='grey--text'>Languages used: <b>{{ project.stack }}</b><br/>Role: <b>{{ project.role }}</b></div>
           </v-card-title>
           <v-card-actions>
-            <v-btn color='secondary' :href='project.link' target='_blank'>See more</v-btn>
+            <v-btn color='primary' :href='project.link' target='_blank'>See more</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -48,7 +48,7 @@
       <v-layout wrap>
         <v-flex xs12 md6 xl6 offset-3>
           <v-card>
-            <v-toolbar color='secondary'>
+            <v-toolbar color='primary'>
               <v-toolbar-title>
                 <div>
                   <h3>Hard skills</h3>
@@ -72,7 +72,7 @@
         </v-flex>
         <v-flex xs12 md6 xl6 offset-3>
           <v-card>
-            <v-toolbar color='secondary'>
+            <v-toolbar color='primary'>
               <v-toolbar-title>
                 <div>
                   <h3>Soft skills</h3>
