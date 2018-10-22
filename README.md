@@ -1,6 +1,7 @@
-# portfoliojb
+# Portfolio Jesse Boogaard
 
 > Portfolio website for Jesse Boogaard
+> Made using Webpack, Vue, Vue-router, and Vuetify
 
 ## Build Setup
 
