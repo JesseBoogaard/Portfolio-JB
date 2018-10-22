@@ -2,13 +2,18 @@
   <v-container grid-list-md>
     <v-flex xs12 sm12 md12 lg12>
     <v-card>
-        <a :href='url.photography.album' target='_blank'>
           <v-img
             :src='url.me'
-            aspect-ratio='2'
+            aspect-ratio='2.1'
+            gradient="rgba(0,0,0,0.32), rgba(0,0,0,0.5), rgba(0,0,0,0.65)"
           >
+            <v-layout
+              align-center
+              column
+            >
+              <h1 class="display-2" color="white" style="margin-top: 22%; padding-left: 2%;">Portfolio Jesse Boogaard</h1>
+            </v-layout>
           </v-img>
-        </a>
       <v-card-title primary-title>
         <div>
           <h3 class='headline mb-0'>Wie ben ik?</h3>
@@ -105,8 +110,7 @@
       return {
         url: {
           photography: {
-            main: 'https://www.flickr.com/photos/65460613@N08/',
-            album: 'https://www.flickr.com/photos/65460613@N08/albums/72157702349803594'
+            main: 'https://www.flickr.com/photos/65460613@N08/'
           },
           music: 'https://www.last.fm/user/PsychoDuck45',
           map: 'https://www.amcharts.com/visited_countries/#BE,DK,FR,DE,GR,IE,LU,NL,NO,PT,CH,GB,CA,US,GH,NG,TN',
@@ -132,12 +136,12 @@
             image: '/static/img/projects/konishi.png'
           },
           {
-            name: 'ASA (P1 event)',
-            stack: 'C#, RobotC, Javascript',
-            description: 'First team assignment at Fontys University. Creation of an early prototype for a product that solves a problem people face in their day-to-day life.',
-            role: 'Project Manager, Backend developer, Frontend developer',
-            link: 'http://asa.jesseboogaard.com/index.html',
-            image: '/static/img/projects/ASA.png'
+            name: 'Portfolio Website 2.0',
+            stack: 'JavaScript (Vue), CSS',
+            description: 'After having a portfolio website made with a template for nearly 3 years I felt it was time to build one myself, applying some of the skills I picked up along the way.',
+            role: 'Backend developer & Frontend developer',
+            link: 'https://github.com/JesseBoogaard/portfolio2',
+            image: '/static/img/projects/portfolio.png'
           },
           {
             name: 'ShreKraft',
@@ -146,6 +150,22 @@
             role: 'Backend developer',
             link: 'https://github.com/JesseBoogaard/ShreKraft',
             image: '/static/img/projects/shrek.png'
+          },
+          {
+            name: 'ASA (P1 event)',
+            stack: 'C#, RobotC, Javascript',
+            description: 'First team assignment at Fontys University. Creation of an early prototype for a product that solves a problem people face in their day-to-day life.',
+            role: 'Project Manager, Backend developer, Frontend developer',
+            link: 'http://asa.jesseboogaard.com/index.html',
+            image: '/static/img/projects/ASA.png'
+          },
+          {
+            name: 'OIM11 Opdracht week 4',
+            stack: 'Javascript (P5.js)',
+            description: 'Simple datavisualization of my mobile data usage between Sept. 1 and Sept. 27. For my Media class, and for myself as introduction to the P5.js framework.',
+            role: 'Backend developer & Frontend developer',
+            link: 'http://jesseboogaard.com/OIM11/week4/index.html',
+            image: '/static/img/projects/oim11.png'
           }
         ],
         hard_skills: [
@@ -174,8 +194,8 @@
             details: 'Ubuntu, CentOS'
           },
           {
-            title: 'Photography',
-            details: '4+ years experience'
+            title: 'Fotografie',
+            details: '5+ jaar ervaring'
           }
         ],
         soft_skills: [
