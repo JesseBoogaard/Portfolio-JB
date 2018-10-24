@@ -1,35 +1,34 @@
 <template>
   <v-container grid-list-md>
     <v-flex xs12 sm12 md12 xl12>
-    <v-card>
-          <v-img
-            :src='url.me'
-            aspect-ratio='2.1'
-            gradient="rgba(0,0,0,0.32), rgba(0,0,0,0.5), rgba(0,0,0,0.65)"
-          >
-            <v-layout
-              align-center
-              column
-            >
-              <h1 class="display-2" color="white" style="margin-top: 22%; padding-left: 2%;">Portfolio Jesse Boogaard</h1>
-            </v-layout>
-          </v-img>
-      <v-card-title primary-title>
-        <div>
-          <h3 class='headline mb-0'>Wie ben ik?</h3>
-        </div>
-      </v-card-title>
-      <v-card-text>
-        Mijn naam is Jesse Boogaard, ik ben een student aan Fontys Hogeschool Tilburg, hier volg ik de studie HBO ICT, ik hoop hier dan ook af te studeren in de richting Software Engineering en Data Science.<br><br>
-        Van jongs af aan al zeer geïnteresseerd in technologie, maar <a :href='url.github' target='_blank'>programmeren</a> (voornamelijk web development) is voor mij een recentere hobby (~3 jaar), ook ben ik erg geïnteresseerd in <a :href='url.photography.main' target='_blank'>fotografie</a>, <a :href='url.music' target='_blank'>muziek</a>, natuur, schietsport, literatuur, <a :href='url.map' target='_blank'>reizen</a>, scheikunde, geschiedenis. Kortom, ik heb een érg brede interesse.<br><br>
-        Daarnaast ben ik een leergierig en assertief persoon, een rustige werker die graag de leiding neemt, dit gaat mij dan ook goed af en heb veel plezier in het leiden van een team.
-      </v-card-text>
-    </v-card>
+      <v-card>
+        <v-img :src='url.me' aspect-ratio='2.1' gradient="rgba(0,0,0,0.32), rgba(0,0,0,0.5), rgba(0,0,0,0.65)">
+          <v-layout align-center column>
+            <h1 class="display-2" color="white" style="margin-top: 22%; padding-left: 2%;">Jesse Boogaard</h1>
+          </v-layout>
+        </v-img>
+        <v-card-title primary-title>
+          <div>
+            <h3 class='headline mb-0'>Wie ben ik?</h3>
+          </div>
+        </v-card-title>
+        <v-card-text>
+          Mijn naam is Jesse Boogaard, ik ben een student aan Fontys Hogeschool Tilburg, hier volg ik de studie HBO
+          ICT, ik hoop hier dan ook af te studeren in de richting Software Engineering en Data Science.<br><br>
+          Van jongs af aan al zeer geïnteresseerd in technologie, maar <a :href='url.github' target='_blank'>programmeren</a>
+          (voornamelijk web development) is voor mij een recentere hobby (~3 jaar), ook ben ik erg geïnteresseerd in <a
+            :href='url.photography.main' target='_blank'>fotografie</a>, <a :href='url.music' target='_blank'>muziek</a>,
+          natuur, schietsport, literatuur, <a :href='url.map' target='_blank'>reizen</a>, scheikunde, geschiedenis.
+          Kortom, ik heb een érg brede interesse.<br><br>
+          Daarnaast ben ik een leergierig en assertief persoon, een rustige werker die graag de leiding neemt, dit gaat
+          mij dan ook goed af en heb veel plezier in het leiden van een team.
+        </v-card-text>
+      </v-card>
     </v-flex>
     <v-spacer></v-spacer>
     <v-flex>
-      <br/><br/><br/>
-      <h3 class='display-2' align='center'>Projecten & opdrachten</h3><br/><br/>
+      <br /><br /><br />
+      <h3 class='display-2' align='center'>Projecten & opdrachten</h3><br /><br />
     </v-flex>
     <v-layout wrap>
       <v-flex xs12 md6 xl4 v-for='(project, index) in projects' :key='index'>
@@ -37,8 +36,8 @@
           <v-img :src='project.image' height='250px'></v-img>
           <v-card-title class='text-xs-left'>
             <h3 class='headline mb-0'>{{ project.name }}</h3>
-              <div><b>{{ project.description }}</b></div>
-              <div class='grey--text'>Languages used: <b>{{ project.stack }}</b><br/>Role: <b>{{ project.role }}</b></div>
+            <div><b>{{ project.description }}</b></div>
+            <div class='grey--text'>Languages used: <b>{{ project.stack }}</b><br />Role: <b>{{ project.role }}</b></div>
           </v-card-title>
           <v-card-actions>
             <v-btn color='primary' :href='project.link' target='_blank'>See more</v-btn>
@@ -47,60 +46,60 @@
       </v-flex>
     </v-layout>
     <v-flex>
-      <br/><br/><br/>
-      <h3 class='display-2' align='center'>Vaardigheden</h3><br/><br/>
+      <br /><br /><br />
+      <h3 class='display-2' align='center'>Vaardigheden</h3><br /><br />
     </v-flex>
-      <v-layout wrap>
-        <v-flex xs12 md6 xl6 offset-3>
-          <v-card>
-            <v-toolbar color='primary'>
-              <v-toolbar-title>
-                <div>
-                  <h3>Hard skills</h3>
-                </div>
-              </v-toolbar-title>
-              <v-spacer></v-spacer>
-              <v-icon>code</v-icon>
-            </v-toolbar>
-            <v-list three-line light>
-              <template v-for='(skill, index) in hard_skills'>
-                <v-list-tile :key='index'>
-                  <v-list-tile-content>
-                    <v-list-tile-title v-html='skill.title'></v-list-tile-title>
-                    <v-list-tile-sub-title v-html='skill.details'></v-list-tile-sub-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-                <v-divider :key='skill.details'></v-divider>
-              </template>
-            </v-list>
-          </v-card>
-        </v-flex>
-        <v-flex xs12 md6 xl6 offset-3>
-          <v-card>
-            <v-toolbar color='primary'>
-              <v-toolbar-title>
-                <div>
-                  <h3>Soft skills</h3>
-                </div>
-              </v-toolbar-title>
-              <v-spacer></v-spacer>
-              <v-icon>people</v-icon>
-            </v-toolbar>
-            <v-list three-line light>
-              <template v-for='(skill, index) in soft_skills'>
-                <v-list-tile :key='index'>
-                  <v-list-tile-content>
-                    <v-list-tile-title v-html='skill.title'></v-list-tile-title>
-                    <v-list-tile-sub-title v-html='skill.details'></v-list-tile-sub-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-                <v-divider :key='skill.details'></v-divider>
-              </template>
-            </v-list>
-          </v-card>
-        </v-flex>
-      </v-layout>
-    <br/>
+    <v-layout wrap>
+      <v-flex xs12 md6 xl6 offset-3>
+        <v-card>
+          <v-toolbar color='primary'>
+            <v-toolbar-title>
+              <div>
+                <h3>Hard skills</h3>
+              </div>
+            </v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-icon>code</v-icon>
+          </v-toolbar>
+          <v-list three-line light>
+            <template v-for='(skill, index) in hard_skills'>
+              <v-list-tile :key='index'>
+                <v-list-tile-content>
+                  <v-list-tile-title v-html='skill.title'></v-list-tile-title>
+                  <v-list-tile-sub-title v-html='skill.details'></v-list-tile-sub-title>
+                </v-list-tile-content>
+              </v-list-tile>
+              <v-divider :key='skill.details'></v-divider>
+            </template>
+          </v-list>
+        </v-card>
+      </v-flex>
+      <v-flex xs12 md6 xl6 offset-3>
+        <v-card>
+          <v-toolbar color='primary'>
+            <v-toolbar-title>
+              <div>
+                <h3>Soft skills</h3>
+              </div>
+            </v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-icon>people</v-icon>
+          </v-toolbar>
+          <v-list three-line light>
+            <template v-for='(skill, index) in soft_skills'>
+              <v-list-tile :key='index'>
+                <v-list-tile-content>
+                  <v-list-tile-title v-html='skill.title'></v-list-tile-title>
+                  <v-list-tile-sub-title v-html='skill.details'></v-list-tile-sub-title>
+                </v-list-tile-content>
+              </v-list-tile>
+              <v-divider :key='skill.details'></v-divider>
+            </template>
+          </v-list>
+        </v-card>
+      </v-flex>
+    </v-layout>
+    <br />
   </v-container>
 </template>
 
@@ -150,6 +149,14 @@
             role: 'Backend developer',
             link: 'https://github.com/JesseBoogaard/ShreKraft',
             image: '/static/img/projects/shrek.png'
+          },
+          {
+            name: 'isOddOrEven-collection',
+            stack: 'Javascript, R, Fortran95, LOLCODE, C++, Python, Elixir',
+            description: 'A bit of an in-joke, writing the dumbest possible isOddOrEven function, in obscure/funny programming languages. Feel free to contribute.',
+            role: 'Curator, Developer',
+            link: 'https://github.com/JesseBoogaard/isOddOrEven-collection',
+            image: '/static/img/projects/isOddOrEven.png'
           },
           {
             name: 'ASA (P1 event)',
