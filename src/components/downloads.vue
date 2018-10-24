@@ -14,8 +14,9 @@
         <td>{{ props.item.filename }}</td>
         <td>{{ props.item.subject }}</td>
         <td>{{ props.item.filetype }}</td>
-        <td><v-btn icon :href="props.item.url" target="_blank" download><v-icon>cloud_download</v-icon></v-btn></td>
+        <td><v-btn icon :href="props.item.url" target="_blank" download><v-icon>get_app</v-icon></v-btn></td>
         <td v-if="props.item.filetype == `PDF`"><v-btn icon :href="props.item.url" target="_blank"><v-icon>pageview</v-icon></v-btn></td>
+        <td v-else><v-btn click.disabled icon><v-icon>close</v-icon></v-btn></td>
 
       </template>
     </v-data-table>
@@ -116,6 +117,20 @@
             filetype: 'PPTX',
             subject: 'Technology',
             url: '/static/files/Presentatie_OIT11.pptx',
+            value: false
+          },
+          {
+            filename: 'Wireframe_portfolio.xd',
+            filetype: 'XD',
+            subject: 'Media',
+            url: '/static/files/Wireframe_portfolio.xd',
+            value: false
+          },
+          {
+            filename: 'Afronding OIM11',
+            filetype: 'PDF',
+            subject: 'Media',
+            url: '/static/files/Afronding_OIM11_Jesse_Boogaard.pdf',
             value: false
           }
         ]
