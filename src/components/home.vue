@@ -1,6 +1,6 @@
 <template>
   <v-container grid-list-md>
-    <v-flex xs12 sm12 md12 lg12>
+    <v-flex xs12 sm12 md12 xl12>
     <v-card>
           <v-img
             :src='url.me'
@@ -21,8 +21,8 @@
       </v-card-title>
       <v-card-text>
         Mijn naam is Jesse Boogaard, ik ben een student aan Fontys Hogeschool Tilburg, hier volg ik de studie HBO ICT, ik hoop hier dan ook af te studeren in de richting Software Engineering en Data Science.<br><br>
-        Ik ben van kleins af aan al zeer geïnteresseerd in technologie, maar <a :href='url.github' target='_blank'>programmeren</a> (voornamelijk web development) is voor mij een recentere hobby (~3 jaar), ook ben ik erg geïnteresseerd in <a :href='url.photography.main' target='_blank'>fotografie</a>, <a :href='url.music' target='_blank'>muziek</a>, natuur, schietsport, literatuur, <a :href='url.map' target='_blank'>reizen</a>, scheikunde, geschiedenis. Kortom, ik heb een érg brede interesse.<br><br>
-        Ik ben een leergierig en assertief persoon, daarnaast ben ik een rustige werker die graag de leiding neemt, dit gaat mij dan ook goed af en heb veel plezier in het leiden van een team.
+        Van jongs af aan al zeer geïnteresseerd in technologie, maar <a :href='url.github' target='_blank'>programmeren</a> (voornamelijk web development) is voor mij een recentere hobby (~3 jaar), ook ben ik erg geïnteresseerd in <a :href='url.photography.main' target='_blank'>fotografie</a>, <a :href='url.music' target='_blank'>muziek</a>, natuur, schietsport, literatuur, <a :href='url.map' target='_blank'>reizen</a>, scheikunde, geschiedenis. Kortom, ik heb een érg brede interesse.<br><br>
+        Daarnaast ben ik een leergierig en assertief persoon, een rustige werker die graag de leiding neemt, dit gaat mij dan ook goed af en heb veel plezier in het leiden van een team.
       </v-card-text>
     </v-card>
     </v-flex>
@@ -164,7 +164,7 @@
             stack: 'Javascript (P5.js)',
             description: 'Simple datavisualization of my mobile data usage between Sept. 1 and Sept. 27. For my Media class, and for myself as introduction to the P5.js framework.',
             role: 'Backend developer & Frontend developer',
-            link: 'http://jesseboogaard.com/OIM11/week4/index.html',
+            link: 'https://jesseboogaard.com/OIM11/week4/index.html',
             image: '/static/img/projects/oim11.png'
           }
         ],

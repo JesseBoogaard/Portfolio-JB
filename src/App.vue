@@ -20,6 +20,9 @@
         <v-img src="static/img/favicon.png" aspect-ratio="1"></v-img>
       </v-btn>
       <v-spacer></v-spacer>
+      <v-btn flat href="/#/">
+        home
+      </v-btn>
       <v-menu offset-y>
         <v-btn flat slot="activator">
           vakken
