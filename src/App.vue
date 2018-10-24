@@ -12,7 +12,7 @@
     </v-parallax> -->
       <v-fab-transition>
         <v-btn @click.native="socials = true;" style="margin-bottom: 42px;" color="primary" fixed dark absolute bottom right fab>
-          <v-icon>add</v-icon>
+          <v-icon>person_add</v-icon>
         </v-btn>
       </v-fab-transition>
     <v-toolbar flat app dense>

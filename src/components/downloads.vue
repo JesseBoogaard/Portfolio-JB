@@ -11,10 +11,10 @@
       class="elevation-1"
     >
       <template slot="items" slot-scope="props">
+        <td><v-btn icon :href="props.item.url" target="_blank" download><v-icon>get_app</v-icon></v-btn></td>
         <td>{{ props.item.filename }}</td>
         <td>{{ props.item.subject }}</td>
         <td>{{ props.item.filetype }}</td>
-        <td><v-btn icon :href="props.item.url" target="_blank" download><v-icon>get_app</v-icon></v-btn></td>
         <td v-if="props.item.filetype == `PDF`"><v-btn icon :href="props.item.url" target="_blank"><v-icon>pageview</v-icon></v-btn></td>
         <td v-else><v-btn click.disabled icon><v-icon>close</v-icon></v-btn></td>
 
@@ -31,14 +31,14 @@
       return {
         headers: [
           {
-            text: 'Bestand',
+            text: 'Download',
             align: 'left',
             sortable: false,
-            value: 'filename'
+            value: 'url'
           },
+          { text: 'Bestand', value: 'filename', sortable: false },
           { text: 'Vak', value: 'subject', sortable: false },
           { text: 'Bestandstype', value: 'filetype', sortable: false },
-          { text: 'Download', value: 'url', sortable: false },
           { text: 'Online weergave', value: 'url', sortable: false }
         ],
         downloads: [
@@ -46,92 +46,85 @@
             filename: 'Zelfportret Jesse Boogaard',
             filetype: 'PDF',
             subject: 'PO',
-            url: '/static/files/Zelfportret_Jesse_Boogaard.pdf',
-            value: false
+            url: '/static/files/Zelfportret_Jesse_Boogaard.pdf'
           },
           {
             filename: 'Verslag eerste gesprek',
             filetype: 'PDF',
             subject: 'PO',
-            url: '/static/files/Verslag_eerste_gesprek.pdf',
-            value: false
+            url: '/static/files/PO/Verslag_eerste_gesprek.pdf'
           },
           {
             filename: 'Combikeuze',
             filetype: 'PDF',
             subject: 'PO',
-            url: '/static/files/Combikeuze.pdf',
-            value: false
-          },
-          {
-            filename: 'Leerdoelen periode 2',
-            filetype: 'PDF',
-            subject: 'PO',
-            url: '/static/files/Leerdoelen_periode_2_Jesse_Boogaard.pdf',
-            value: false
-          },
-          {
-            filename: 'Terugblikken & vooruit kijken',
-            filetype: 'PDF',
-            subject: 'PO',
-            url: '/static/files/Verslag_tweede_gesprek.pdf',
-            value: false
-          },
-          {
-            filename: 'Evaluatie P1',
-            filetype: 'PDF',
-            subject: 'PO',
-            url: '/static/files/Evaluatie_verslag_P1.pdf',
-            value: false
+            url: '/static/files/PO/Combikeuze.pdf'
           },
           {
             filename: 'PO Spel',
             filetype: 'JPG',
             subject: 'PO',
-            url: '/static/files/PO_spel.jpg',
-            value: false
+            url: '/static/files/PO/PO_spel.jpg'
+          },
+          {
+            filename: 'Leerdoelen periode 2',
+            filetype: 'PDF',
+            subject: 'PO',
+            url: '/static/files/PO/Leerdoelen_periode_2_Jesse_Boogaard.pdf'
+          },
+          {
+            filename: 'Terugblikken & vooruit kijken',
+            filetype: 'PDF',
+            subject: 'PO',
+            url: '/static/files/PO/Verslag_tweede_gesprek.pdf'
+          },
+          {
+            filename: 'Evaluatie P1',
+            filetype: 'PDF',
+            subject: 'PO',
+            url: '/static/files/PO/Evaluatie_verslag_P1.pdf'
           },
           {
             filename: 'Eigen project Software',
             filetype: 'PDF',
             subject: 'Software',
-            url: '/static/files/Opdracht_1_OIS11.pdf',
-            value: false
+            url: '/static/files/Software/Opdracht_1_OIS11.pdf'
           },
           {
             filename: 'Reflectie verslag OIS11',
             filetype: 'PDF',
             subject: 'Software',
-            url: '/static/files/Reflectie_verslag_OIS11.pdf',
-            value: false
+            url: '/static/files/Software/Reflectie_verslag_OIS11.pdf'
           },
           {
             filename: 'Afronding OIT11',
             filetype: 'PDF',
             subject: 'Technology',
-            url: '/static/files/Afronding_OIT11_Jesse_Boogaard.pdf',
-            value: false
+            url: '/static/files/Technology/Afronding_OIT11_Jesse_Boogaard.pdf'
           },
           {
             filename: 'Presentatie Embedded Systems',
             filetype: 'PPTX',
             subject: 'Technology',
-            url: '/static/files/Presentatie_OIT11.pptx',
-            value: false
+            url: '/static/files/Technology/Presentatie_OIT11.pptx'
           },
           {
             filename: 'Wireframe_portfolio.xd',
             filetype: 'XD',
             subject: 'Media',
-            url: '/static/files/Wireframe_portfolio.xd',
-            value: false
+            url: '/static/files/Media/Wireframe_portfolio.xd'
           },
           {
             filename: 'Afronding OIM11',
             filetype: 'PDF',
             subject: 'Media',
-            url: '/static/files/Afronding_OIM11_Jesse_Boogaard.pdf',
-            value: false
+            url: '/static/files/Media/Afronding_OIM11_Jesse_Boogaard.pdf'
+          },
+          {
+            filename: 'Business Portfolio',
+            filetype: 'DOCX',
+            subject: 'Business',
+            url: '/static/files/Business/Portfolio_OIB11.docx'
           }
         ]
       }
