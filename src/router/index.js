@@ -8,6 +8,7 @@ import business from '@/components/business'
 import software from '@/components/software'
 import technology from '@/components/technology'
 import portfolio from '@/components/portfolio'
+import photography from '@/components/photography'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/portfolio',
       name: 'portfolio',
       component: portfolio
+    },
+    {
+      path: '/photography',
+      name: 'photography',
+      component: photography
     }
   ]
 })
