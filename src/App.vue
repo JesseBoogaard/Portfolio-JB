@@ -81,7 +81,7 @@ export default {
         { title: 'Portfolio', url: '/#/portfolio' }
       ],
       media: [
-        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jesseboogaard/', icon: 'people' },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jesseboogaard/', icon: 'group_add' },
         { name: 'GitHub', url: 'https://www.github.com/JesseBoogaard', icon: 'code' },
         { name: '+31 6 28020731', url: '', icon: 'phone' }
       ]
