@@ -7,10 +7,10 @@
             MFAAS
           </v-card-title>
           <v-card-text align="center">
-            <iframe width="390" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/MFAAS"></iframe>
+            <iframe width="340" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/MFAAS"></iframe>
           </v-card-text>
           <v-card-actions>
-            <v-btn @click.native="MFAAS = false" color="green">close</v-btn>
+            <v-btn @click.native="dialog = false" color="green">close</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>

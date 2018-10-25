@@ -33,8 +33,8 @@
           </v-list-tile>
         </v-list>
       </v-menu>
-      <v-btn flat href='/#/photography'>
-        photography
+      <v-btn flat href='/#/downloads'>
+        downloads
       </v-btn>
     </v-toolbar>
     <v-content>

@@ -109,10 +109,10 @@
             url: '/static/files/Technology/Presentatie_OIT11.pptx'
           },
           {
-            filename: 'Wireframe_portfolio.xd',
-            filetype: 'XD',
+            filename: 'Opdrachten OIM11',
+            filetype: 'ZIP',
             subject: 'Media',
-            url: '/static/files/Media/Wireframe_portfolio.xd'
+            url: '/static/files/Media/OIM11_Opdrachten_Jesse_Boogaard.zip'
           },
           {
             filename: 'Afronding OIM11',
