@@ -1,8 +1,8 @@
 <template>
   <v-container grid-list-md>
     <v-flex xs12 sm12 md8 xl8 offset-md2 offset-xl2>
-      <v-dialog v-model="dialog" width="500px">
-        <v-card>
+      <v-dialog v-model="dialog" width="32rem">
+        <v-card style="padding: 1rem;">
           <v-card-title class="headline" primary-title>
             MFAAS
           </v-card-title>
@@ -14,7 +14,7 @@
           </v-card-actions>
         </v-card>
       </v-dialog>
-      <v-card style="padding: 2%;">
+      <v-card style="padding: 1.8rem;">
         <v-card-title>
           <div class="headline">
             <h2>Reflectie media</h2>
