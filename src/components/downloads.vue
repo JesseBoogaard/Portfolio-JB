@@ -46,7 +46,7 @@
             filename: 'Zelfportret Jesse Boogaard',
             filetype: 'PDF',
             subject: 'PO',
-            url: '/static/files/Zelfportret_Jesse_Boogaard.pdf'
+            url: '/static/files/PO/Zelfportret_Jesse_Boogaard.pdf'
           },
           {
             filename: 'Verslag eerste gesprek',
