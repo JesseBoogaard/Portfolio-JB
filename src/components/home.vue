@@ -157,22 +157,6 @@
             role: 'Curator, Developer',
             link: 'https://github.com/JesseBoogaard/isOddOrEven-collection',
             image: '/static/img/projects/isOddOrEven.png'
-          },
-          {
-            name: 'ASA (P1 event)',
-            stack: 'C#, RobotC, Javascript',
-            description: 'First team assignment at Fontys University. Creation of an early prototype for a product that solves a problem people face in their day-to-day life.',
-            role: 'Project Manager, Backend developer, Frontend developer',
-            link: 'http://asa.jesseboogaard.com/index.html',
-            image: '/static/img/projects/ASA.png'
-          },
-          {
-            name: 'OIM11 Opdracht week 4',
-            stack: 'Javascript (P5.js)',
-            description: 'Simple datavisualization of my mobile data usage between Sept. 1 and Sept. 27. For my Media class, and for myself as introduction to the P5.js framework.',
-            role: 'Backend developer & Frontend developer',
-            link: 'https://jesseboogaard.com/OIM11/week4/index.html',
-            image: '/static/img/projects/oim11.png'
           }
         ],
         hard_skills: [
