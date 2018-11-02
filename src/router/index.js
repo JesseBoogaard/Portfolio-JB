@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '@/components/home'
+import homeNL from '@/components/homeNL'
+import homeEN from '@/components/homeEN'
 
 Vue.use(Router)
 
@@ -8,8 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: home
+      name: 'homeNL',
+      component: homeNL
+    },
+    {
+      path: '/en',
+      name: 'homeEN',
+      component: homeEN
     }
   ]
 })
