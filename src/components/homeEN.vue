@@ -51,7 +51,7 @@
         <v-card-text>
           My name is Jesse Boogaard. I am a student at Fontys University of applied sciences. Currently studying in hopes of achieving my BSc in Software Engineering & Data Science.<br><br>
           Ever since I was young I have taken a huge interest in technology, but <a :href='url.github' target='_blank'>programming</a>
-          (namely web development) is a more recent hobby for me (~3 years), I also take a great interest <a
+          (namely web development) is a more recent hobby for me (~3 years), I also take a great interest in<a
             :href='url.photography.main' target='_blank'>photography</a>, <a :href='url.music' target='_blank'>music</a>,
           nature, shooting sports, literature, <a :href='url.map' target='_blank'>travelling</a>, chemistry, history.
           In other words, I have a wide range of interests.<br><br>
