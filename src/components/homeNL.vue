@@ -45,11 +45,11 @@
         </v-img>
         <v-card-title primary-title>
           <div>
-            <h3 class='headline mb-0'>Wie ben ik?</h3>
+            <h3 class='headline mb-0'>Over mij</h3>
           </div>
         </v-card-title>
         <v-card-text>
-          Mijn naam is Jesse Boogaard, ik ben een student aan Fontys Hogeschool Tilburg, hier volg ik de studie HBO
+          Op het moment ben ik een student aan Fontys Hogeschool Tilburg, hier volg ik de studie HBO
           ICT, ik hoop hier dan ook af te studeren in de richting Software Engineering en Data Science.<br><br>
           Van jongs af aan al zeer geïnteresseerd in technologie, maar <a :href='url.github' target='_blank'>programmeren</a>
           (voornamelijk web development) is voor mij een recentere hobby (~3 jaar), ook ben ik erg geïnteresseerd in <a
