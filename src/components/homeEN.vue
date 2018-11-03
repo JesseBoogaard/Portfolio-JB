@@ -51,7 +51,7 @@
         <v-card-text>
           I am currently studying at Fontys University of Applied Sciences. Working towards a BSc in Software Engineering & Data Science.<br><br>
           I have always taken a huge interest in technology, but <a :href='url.github' target='_blank'>programming</a>
-          (namely web development) is a more gratifying hobby for me spanning around 3 years. My personal pass times and hobbies also include <a
+          (namely web development) is a more gratifying hobby for me, spanning around 3 years. My personal pass times and hobbies also include <a
             :href='url.photography.main' target='_blank'>photography</a>, <a :href='url.music' target='_blank'>music</a>,
           nature, shooting sports, literature, <a :href='url.map' target='_blank'>travelling</a>, and chemistry.<br><br>
           I am enthused to learn new things, and am always looking for ways to further improve myself. I am a calm and collected worker who very much enjoys leading a motivated team, and take great satisfaction in doing so successfully.
