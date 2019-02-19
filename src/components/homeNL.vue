@@ -179,7 +179,7 @@
           },
           {
             name: 'Portfolio Website 2.0',
-            stack: 'JavaScript (Vue), CSS',
+            stack: 'Vue (Vue-Router/Vuex/Vuetify)',
             description: 'After having a portfolio website made with a template for nearly 3 years I felt it was time to build one myself, applying some of the skills I picked up along the way.',
             role: 'Backend developer & Frontend developer',
             link: 'https://github.com/JesseBoogaard/portfolio2',
@@ -200,6 +200,14 @@
             role: 'Curator, Developer',
             link: 'https://github.com/JesseBoogaard/isOddOrEven-collection',
             image: '/static/img/projects/isOddOrEven.png'
+          },
+          {
+            name: 'Pop! Vinyl collection tracker',
+            stack: 'ASP.NET Core 2.0 (MVC), JavaScript',
+            description: 'A website where people can keep track of their Pop! Vinyl (Funko pops) collection. Made for an assignment at uni.',
+            role: 'Backend developer & Frontend developer',
+            link: 'https://github.com/JesseBoogaard/PopVinyl-collection',
+            image: ''
           }
         ],
         hard_skills: [
