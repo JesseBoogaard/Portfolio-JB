@@ -76,7 +76,8 @@
             <div class='grey--text'>Languages used: <b>{{ project.stack }}</b><br />Role: <b>{{ project.role }}</b></div>
           </v-card-title>
           <v-card-actions>
-            <v-btn color='primary' :href='project.link' target='_blank'>See more</v-btn>
+            <v-btn v-if="project.link != ''" color='primary' :href='project.link' target='_blank'>See more</v-btn>
+            <v-btn v-else color='primary' :href='project.link' target='_blank' disabled>See more</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -147,7 +148,6 @@
         media: [
           { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jesseboogaard/', icon: 'group_add' },
           { name: 'GitHub', url: 'https://www.github.com/JesseBoogaard', icon: 'code' },
-          { name: '+31 6 28020731', url: '', icon: 'phone' },
           { name: 'jesse98@live.nl', url: '', icon: 'mail' }
         ],
         url: {
@@ -196,32 +196,32 @@
           {
             name: 'isOddOrEven-collection',
             stack: 'Javascript, R, Fortran95, LOLCODE, C++, Python, Elixir',
-            description: 'A bit of an in-joke, writing the dumbest possible isOddOrEven function, in obscure/funny programming languages. Feel free to contribute.',
+            description: 'A bit of an in-joke, writing the dumbest possible isOddOrEven function, in obscure/funny/old programming languages. Feel free to contribute.',
             role: 'Curator, Developer',
             link: 'https://github.com/JesseBoogaard/isOddOrEven-collection',
             image: '/static/img/projects/isOddOrEven.png'
           },
           {
-            name: 'Pop! Vinyl collection tracker',
-            stack: 'ASP.NET Core 2.0 (MVC), JavaScript',
-            description: 'A website where people can keep track of their Pop! Vinyl (Funko pops) collection. Made for an assignment at uni.',
-            role: 'Backend developer & Frontend developer',
-            link: 'https://github.com/JesseBoogaard/PopVinyl-collection',
-            image: ''
+            name: 'Node.js FTP/filesync client',
+            stack: 'Node.js, Electron',
+            description: 'Closed source project I did for my final internship where I created a PoC crossplatform filesync + FTP client using Node.js and Electron.',
+            role: 'Fullstack developer',
+            link: '',
+            image: '/static/img/projects/FTP.png'
           }
         ],
         hard_skills: [
-          {
-            title: 'Python',
-            details: 'Flask/Django'
-          },
           {
             title: 'Javascript',
             details: 'Node.js, ES6/7, Electron'
           },
           {
-            title: 'SQL',
-            details: 'SQLite, MySQL, MariaDB'
+            title: 'C#',
+            details: '.NET Core 2.*'
+          },
+          {
+            title: 'SQL & NoSQL',
+            details: 'SQLite, MySQL, SQLServer, Google Firestore'
           },
           {
             title: 'Vue',
@@ -233,11 +233,11 @@
           },
           {
             title: 'Linux',
-            details: 'Ubuntu, CentOS'
+            details: 'Ubuntu/Debian, CentOS, Manjaro'
           },
           {
-            title: 'Fotografie',
-            details: '5+ jaar ervaring'
+            title: 'Photography',
+            details: '6+ jaar ervaring.'
           }
         ],
         soft_skills: [
